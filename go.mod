@@ -1,3 +1,3 @@
-module guess
+module guessit
 
 go 1.22.2
