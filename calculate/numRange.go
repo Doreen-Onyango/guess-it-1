@@ -5,6 +5,7 @@ func CalculateRange(num []float64) (float64, float64) {
 		return 0, 1000
 	}
 
+	// Calculate the difference between each consecutive pair of numbers.
 	dif := make([]float64, len(num)-1)
 	for i := 1; i < len(num); i++ {
 		dif[i-1] = num[i] - num[i-1]
@@ -16,8 +17,9 @@ func CalculateRange(num []float64) (float64, float64) {
 	lastNum := num[len(num)-1]
 	predict := lastNum + meanDiff
 
-	minLimit := predict - 3*stdDiff
-	maxLimit := predict + 3*stdDiff
+	// Capture variability around the predicted value.
+	minLimit := predict - 2*stdDiff
+	maxLimit := predict + 2*stdDiff
 
 	return minLimit, maxLimit
 }
