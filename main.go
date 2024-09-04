@@ -18,11 +18,11 @@ func main() {
 		number, err := strconv.ParseFloat(line, 64)
 		if err != nil {
 			fmt.Println("Invalid input:", err)
-			continue
+			// continue
 		}
 		numbers = append(numbers, number)
 
-		lowerBound, upperBound := calculate.CalculateRange(numbers)
-		fmt.Printf("%.0f %.0f\n", lowerBound, upperBound)
+		lowLimit, upLimit := calculate.CalculateRange(numbers)
+		fmt.Printf("%.0f %.0f\n", lowLimit, upLimit)
 	}
 }
