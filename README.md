@@ -10,7 +10,7 @@
 To run the program you need to do the following:
 1. download the zip file provided and extract
 2. create a student directory inside that extracted directory
-3. inside the student directory put all your files that are essention to run the program
+3. inside the student directory put all your files that are essential to run the program
 4. navigate to the student directory and  set up the dependencies that your Node.js project needs to run properly.
 ```
 npm install
@@ -24,6 +24,18 @@ chmod +x script.sh
 npm start
 ```
 7. go to localhost and open the port used and start testing the ranges.
+
+## Testing
+This program has test files that tests the functionality of the program. To run the test, navigate to calculate directory and do:
+```
+go test -v
+```
+## Contribution
+This project is open for contribution. Create pull request if need be.
+
+## Author
+This project is managed by [Doreen Onyango](https://learn.zone01kisumu.ke/git/doonyango)
+
 
 
  
