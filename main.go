@@ -18,7 +18,7 @@ func main() {
 		number, err := strconv.ParseFloat(line, 64)
 		if err != nil {
 			fmt.Println("Invalid input:", err)
-			// continue
+			continue
 		}
 		numbers = append(numbers, number)
 
