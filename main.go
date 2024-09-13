@@ -21,8 +21,10 @@ func main() {
 			continue
 		}
 		numbers = append(numbers, number)
+		if len(numbers) > 1 {
+			lowLimit, upLimit := calculate.CalculateRange(numbers)
+			fmt.Printf("%.0f %.0f\n", lowLimit, upLimit)
+		}
 
-		lowLimit, upLimit := calculate.CalculateRange(numbers)
-		fmt.Printf("%.0f %.0f\n", lowLimit, upLimit)
 	}
 }
