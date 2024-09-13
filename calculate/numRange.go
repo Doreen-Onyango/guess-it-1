@@ -1,8 +1,8 @@
 package calculate
 
 func CalculateRange(num []float64) (float64, float64) {
-	if len(num) < 2 {
-		return 0, 1000
+	if len(num) == 0 {
+		return 0, 0
 	}
 
 	meanDiff := Mean(num)
