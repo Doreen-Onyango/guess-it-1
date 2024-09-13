@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 
@@ -23,7 +24,7 @@ func main() {
 		numbers = append(numbers, number)
 		if len(numbers) > 1 {
 			lowLimit, upLimit := calculate.CalculateRange(numbers)
-			fmt.Printf("%.0f %.0f\n", lowLimit, upLimit)
+			fmt.Printf("%v %.v\n", int(math.Round(lowLimit)), int(math.Round(upLimit)))
 		}
 
 	}
