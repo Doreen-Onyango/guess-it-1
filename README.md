@@ -9,9 +9,8 @@
 ## Usage
 To run the program you need to do the following:
 1. download the zip file provided and extract
-2. create a student directory inside that extracted directory
-3. inside the student directory put all your files that are essential to run the program
-4. navigate to the student directory and  set up the dependencies that your Node.js project needs to run properly.
+2. copy the student directory and paste to the extracted file 
+3. navigate to the student directory and  set up the dependencies that your Node.js project needs to run properly.
 ```
 npm install
 ```
