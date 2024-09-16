@@ -11,9 +11,14 @@ func Mean(data []float64) float64 {
 		fmt.Println("Provide Data")
 		os.Exit(0)
 	}
+	n := len(data) - 4
+	if n < 0 {
+		return 0
+	}
+	newData := data[n:]
 	var sum float64
-	for _, value := range data {
+	for _, value := range newData {
 		sum += value
 	}
-	return sum / float64(len(data))
+	return sum / float64(len(newData))
 }
